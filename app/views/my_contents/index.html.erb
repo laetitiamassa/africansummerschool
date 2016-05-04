@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing My Contents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Home content</th>
+      <th>Concept content</th>
+      <th>Program content</th>
+      <th>About content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @my_contents.each do |my_content| %>
+      <tr>
+        <td><%= my_content.home_content %></td>
+        <td><%= my_content.concept_content %></td>
+        <td><%= my_content.program_content %></td>
+        <td><%= my_content.about_content %></td>
+        <td><%= link_to 'Show', my_content %></td>
+        <td><%= link_to 'Edit', edit_my_content_path(my_content) %></td>
+        <td><%= link_to 'Destroy', my_content, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New My content', new_my_content_path %>

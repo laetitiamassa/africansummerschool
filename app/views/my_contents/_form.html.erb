@@ -1,0 +1,14 @@
+<%= simple_form_for(@my_content) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :home_content %>
+    <%= f.input :concept_content %>
+    <%= f.input :program_content %>
+    <%= f.input :about_content %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

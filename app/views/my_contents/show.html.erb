@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Home content:</strong>
+  <%= @my_content.home_content %>
+</p>
+
+<p>
+  <strong>Concept content:</strong>
+  <%= @my_content.concept_content %>
+</p>
+
+<p>
+  <strong>Program content:</strong>
+  <%= @my_content.program_content %>
+</p>
+
+<p>
+  <strong>About content:</strong>
+  <%= @my_content.about_content %>
+</p>
+
+<%= link_to 'Edit', edit_my_content_path(@my_content) %> |
+<%= link_to 'Back', my_contents_path %>

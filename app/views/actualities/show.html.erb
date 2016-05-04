@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @actuality.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @actuality.description %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @actuality.content %>
+</p>
+
+<%= link_to 'Edit', edit_actuality_path(@actuality) %> |
+<%= link_to 'Back', actualities_path %>

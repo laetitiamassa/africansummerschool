@@ -1,2 +1,6 @@
 <%# add navigation links to this file %>
-<li><%= link_to 'About', page_path('about') %></li>
+<li><%= link_to 'Concept', concept_path %></li>
+<li><%= link_to 'Programme', program_path %></li>
+<li><%= link_to 'A propos', about_path %></li>
+<li><%= link_to 'Inscription', new_user_registration_path %></li>
+ <li><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></li>
